@@ -10,7 +10,8 @@
     "clean:example": "rimraf example/lib",
     "dev": "npm run clean:example && npm run clean && rollup --watch --config scripts/rollup/rollup.config.dev.js",
     "build": "npm run clean && tsc && rollup --config scripts/rollup/rollup.config.prod.js",
-    "eslint": "eslint src --fix --ext .ts"
+    "eslint": "eslint src --fix --ext .ts",
+    "push:publish": "git push --follow-tags origin master && npm publish"
   },
   "bin": {
     "eslint": "./node_modules/.bin/eslint"
