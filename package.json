@@ -1,6 +1,6 @@
 {
   "name": "leon-test-hello-world",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "npm test",
   "main": "main.js",
   "scripts": {
