@@ -1,0 +1,86 @@
+{
+  "name": "leon-test-hello-world",
+  "version": "1.0.1",
+  "description": "npm test",
+  "main": "main.js",
+  "scripts": {
+    "commit": "git-cz",
+    "release": "standard-version",
+    "clean": "rimraf dist && rimraf lib",
+    "clean:example": "rimraf example/lib",
+    "dev": "npm run clean:example && npm run clean && rollup --config scripts/rollup/rollup.config.dev.js",
+    "build": "npm run clean && tsc && rollup --config scripts/rollup/rollup.config.prod.js"
+  },
+  "author": {
+    "name": "leon",
+    "email": "582104384@qq.com",
+    "url": "https://wangxiaokai.vip"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@types/node": "^12.6.9",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "commitizen": "^4.0.3",
+    "commitlint-config-cz": "^0.12.1",
+    "cz-customizable": "^6.2.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.18.0",
+    "rollup-plugin-alias": "^1.5.2",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-filesize": "^6.1.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "rollup-plugin-uglify": "^6.0.2",
+    "standard-version": "^7.0.0",
+    "typescript": "^3.5.3",
+    "uglify-es": "^3.3.9"
+  },
+  "files": [
+    "dist/*.js",
+    "lib"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "types": "./lib/types/main.d.ts",
+  "module": "dist/leon-test-hello-world.esm.js",
+  "unpkg": "dist/leon-test-hello-world.min.js",
+  "keywords": [
+    "leon",
+    "hello world"
+  ],
+  "homepage": "https://github.com/wall-wxk/sniffer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wall-wxk/sniffer.git"
+  }
+}
