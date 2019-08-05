@@ -1,2 +1,2 @@
-declare const say = "hello world";
+declare const say = "hello world!";
 export default say;

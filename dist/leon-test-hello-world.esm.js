@@ -1,15 +1,16 @@
 
 /*!
-* leon-test-hello-world.js v1.0.1
+* leon-test-hello-world.js v1.2.2
 * (c) 2019-2019 [object Object]
 * Released under the MIT License.
 */
 
-var say = 'hello world';
+var say = 'hello world!';
 
 var main = {
-    say: function say$1() {
-        return '' + say;
+    say: function () {
+        // let haha=90;
+        return "" + say;
     }
 };
 

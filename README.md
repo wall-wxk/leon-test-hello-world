@@ -1,5 +1,7 @@
 # [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wall-wxk/leon-test-hello-world/blob/master/LICENSE) [![NPM version](https://img.shields.io/npm/v/leon-test-hello-world.svg)](https://www.npmjs.com/package/leon-test-hello-world)
 
+> 测试开源项目，npm规范发包流程
+
 ## Usage
 
 Using npm, download and install the code.
