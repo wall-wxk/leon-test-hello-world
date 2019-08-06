@@ -1,4 +1,4 @@
-# [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wall-wxk/leon-test-hello-world/blob/master/LICENSE) [![NPM version](https://img.shields.io/npm/v/leon-test-hello-world.svg)](https://www.npmjs.com/package/leon-test-hello-world)
+# [![CircleCI](https://img.shields.io/circleci/build/github/wall-wxk/leon-test-hello-world/master)](https://circleci.com/gh/wall-wxk/leon-test-hello-world/tree/master) [![Coverage Status](https://coveralls.io/repos/github/wall-wxk/leon-test-hello-world/badge.svg?branch=master)](https://coveralls.io/github/wall-wxk/leon-test-hello-world?branch=master) [![NPM version](https://img.shields.io/npm/v/leon-test-hello-world.svg)](https://www.npmjs.com/package/leon-test-hello-world) [![download](https://img.shields.io/npm/dm/leon-test-hello-world)](https://www.npmjs.com/package/leon-test-hello-world) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wall-wxk/leon-test-hello-world/blob/master/LICENSE)
 
 > 测试开源项目，npm规范发包流程
 
