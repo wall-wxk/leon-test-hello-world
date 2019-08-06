@@ -1,6 +1,6 @@
 
 /*!
-* leon-test-hello-world.js v1.2.4
+* leon-test-hello-world.js v1.2.5
 * (c) 2019-2019 [object Object]
 * Released under the MIT License.
 */
