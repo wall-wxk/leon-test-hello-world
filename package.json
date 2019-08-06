@@ -11,10 +11,13 @@
     "dev": "npm run clean:example && npm run clean && rollup --watch --config scripts/rollup/rollup.config.dev.js",
     "build": "npm run clean && tsc && rollup --config scripts/rollup/rollup.config.prod.js",
     "eslint": "eslint src --fix --ext .ts",
-    "push:publish": "git push --follow-tags origin master && npm publish"
+    "push:publish": "git push --follow-tags origin master && npm publish",
+    "test": "nyc mocha"
   },
   "bin": {
-    "eslint": "./node_modules/.bin/eslint"
+    "eslint": "./node_modules/.bin/eslint",
+    "mocha": "./node_modules/.bin/mocha",
+    "nyc": "./node_modules/.bin/nyc"
   },
   "author": {
     "name": "leon",
@@ -33,12 +36,15 @@
     "@types/node": "^12.6.9",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
+    "chai": "^4.2.0",
     "commitizen": "^4.0.3",
     "commitlint-config-cz": "^0.12.1",
     "cz-customizable": "^6.2.0",
     "eslint": "^5.16.0",
     "husky": "^3.0.2",
     "lint-staged": "^9.2.1",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
     "rimraf": "^2.6.3",
     "rollup": "^1.18.0",
     "rollup-plugin-alias": "^1.5.2",

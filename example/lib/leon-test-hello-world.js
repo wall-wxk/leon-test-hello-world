@@ -1,10 +1,3 @@
-
-/*!
-* leon-test-hello-world.js v1.2.4
-* (c) 2019-2019 [object Object]
-* Released under the MIT License.
-*/
-
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
