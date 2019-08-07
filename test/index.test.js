@@ -1,9 +1,13 @@
-var Say = require('../dist/leon-test-hello-world.cjs.js');
-var assert = require('chai').assert;
+import Say from '../dist/leon-test-hello-world.cjs.js'
+import {
+    assert
+} from 'chai';
+import hello from './check.esm';
 
 describe('hello world test', function(){
     it('say() has return string', function(){
-        var sayStr = Say.say();
+        const sayStr = Say.say();
+        hello();
         assert.typeOf(sayStr, 'string');
     })
 })
